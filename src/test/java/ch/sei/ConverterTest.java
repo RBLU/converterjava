@@ -9,6 +9,7 @@ class ConverterTest {
     @Test
     void convert() {
         Converter c = new Converter();
-        System.out.println(c.convert("m", "cm", 100));
+        long result = c.convert("m", "cm", 100);
+        assertEquals(10000,result);
     }
 }
